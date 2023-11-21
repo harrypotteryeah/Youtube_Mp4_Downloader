@@ -25,7 +25,7 @@ if use_clipboard:#Adds every text you copy into the list
         except pyperclip.PyperclipTimeoutException:
             pass
 else:
-    with open("Musics.txt","r+") as f:
+    with open("VideoUrls.txt","r+") as f:
         url_list=list(filter(lambda x:x!="" and x[0]!='#',map(lambda x:x.strip(" \t\n"),f.readlines())))
 
 
