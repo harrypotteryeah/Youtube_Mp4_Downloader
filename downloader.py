@@ -5,9 +5,17 @@ import keyboard
 from concurrent.futures import ThreadPoolExecutor
 from tkinter import filedialog,Tk
 import time
+
+
 download_mp4=True #If False will download mp3
 video_quality='360p'
-use_clipboard=False#If False urls will get loaded from the text file
+use_clipboard=False#If False, urls will get loaded from the text file
+
+
+#TODO Add option for start downloading when url gets copied
+#TODO Add option for choosing between Process, Thread and synchronous downloading
+#TODO Get video info(title,length,size) before downloading
+#TODO Add gui 
 
 #Get the folder to put the downloaded files in
 Tk().withdraw() 
